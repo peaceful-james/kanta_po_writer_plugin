@@ -75,7 +75,7 @@ defmodule Kanta.POWriter.Extractor do
   end
 
   def translate_message(%Expo.Message.Plural{} = msg, domain_id, locale) do
-    msgid = List.first(msg.msgid)
+    msgid = List.first(msg.msgid_plural)
 
     with {:ok, kanta_msg} <-
            Translations.get_message(
