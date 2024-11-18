@@ -23,8 +23,8 @@ defmodule Kanta.PoWriter.Plugin.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:phoenix_live_view, "~> 0.20"},
-      {:kanta, github: "curiosum-dev/kanta", optional: true, override: true},
+      {:phoenix_live_view, "~> 0.18"},
+      {:kanta, "~> 0.4.1", optional: true},
 
       # dev
       {:doctor, "~> 0.21.0", only: :dev},
